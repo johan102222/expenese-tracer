@@ -1,0 +1,151 @@
+@font-face {
+  font-family: evogria;
+  src: url("font/Evogria.otf");
+}
+
+@font-face {
+  font-family: Ethno;
+  src: url("font/ethnocentric.otf");
+}
+
+body {
+  font-family: evogria;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+h4 {
+  margin: 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.FromInput {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.FromInput label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.FromInput input {
+  padding: 10px;
+  margin-right: 20px;
+  background-color: #dadada;
+  border-radius: 5px;
+  border: none;
+}
+
+.FromInput button {
+  padding: 10px 20px;
+  border: none;
+  background: rgb(232, 255, 0);
+  background: linear-gradient(
+    328deg,
+    rgba(232, 255, 0, 1) 0%,
+    rgba(0, 255, 218, 1) 100%
+  );
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: Ethno;
+}
+
+.FromInput button:hover {
+  background: rgb(136, 255, 0);
+  background: linear-gradient(
+    328deg,
+    rgb(72, 255, 0) 0%,
+    rgb(0, 255, 128) 100%
+  );
+}
+
+.Lovely {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(34,239,255);
+background: linear-gradient(138deg, rgba(34,239,255,1) 0%, rgba(0,1,255,1) 100%);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.Lovely h4 {
+  width: 33.33%;
+  text-align: center;
+}
+
+/* Mengatur tampilan list barang */
+#ListBarang {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Satuan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    138deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(184, 184, 214, 1) 100%
+  );
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Satuan h4 {
+  width: 10.33%;
+  text-align: center;
+}
+
+.RemoveBtn {
+  padding: 5px 10px;
+  background: rgb(255, 0, 121);
+  background: linear-gradient(
+    328deg,
+    rgba(255, 0, 121, 1) 0%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: Ethno;
+}
+
+.RemoveBtn:hover {
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+    328deg,
+    rgb(255, 0, 221) 0%,
+    rgb(255, 174, 0) 100%
+  );
+}
+
+/* Styling untuk total harga */
+.totalfooter {
+  text-align: center ;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

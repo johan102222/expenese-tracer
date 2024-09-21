@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas.Com</title>
+    <link rel="stylesheet" href="tugas.css" />
+    <link rel="icon" href="gintoki.webp">
+  </head>
+  <body>
+    <div class="FromInput">
+      <center>
+        Expense Tracker
+      </center>
+      <label> Barang : </label>
+      <input type="text" name="" id="NamaBarang" required />
+      <label> Harga : </label>
+      <input type="number" name="" id="HargaBarang" required />
+      <button onclick="AddList()">Add</button>
+    </div>
+    <div class="Lovely">
+      <h4>Barang</h4>
+      <h4>Harga</h4>
+      <h4>Action</h4>
+    </div>
+    <div id="ListBarang"></div>
+    <div class="totalfooter">
+      <h3>Total: Rp.0</h3>
+    </div>
+    <script src="tugas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+let List = [];
+let TotalAll = 0;
+
+function AddList() {
+  let barang = document.getElementById("NamaBarang").value;
+  let harga = parseFloat(document.getElementById("HargaBarang").value);
+
+  if (barang && harga) {
+    List.push({
+      Barang: barang,
+      Harga: harga,
+    });
+    Retotal();
+    ShowList();
+  }
+}
+
+function ShowList() {
+  let content = "";
+  List.forEach((Listnya, index) => {
+    content += `
+      <div class="Satuan">
+         <h4>${Listnya.Barang}</h4>
+         <h4>Rp. ${Listnya.Harga.toFixed(2)}</h4>
+         <button onclick="Remove(${index})" class="RemoveBtn">Remove</button>
+      </div>
+    `;
+  });
+  document.getElementById("ListBarang").innerHTML = content;
+}
+
+function Remove(index) {
+  List.splice(index, 1);
+  Retotal();
+  ShowList();
+}
+
+function Retotal() {
+  TotalAll = List.reduce((sum, item) => sum + item.Harga, 0);
+  document.querySelector(".Total").innerHTML = `Total : Rp. ${TotalAll.toFixed(
+    2
+  )}`;
+}
